@@ -89,6 +89,10 @@ h2 {
   font-size: 24px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .btn {
   padding: 20px 30px;
   display: inline-block;
@@ -110,7 +114,7 @@ h2 {
 
 .top-nav {
   background-color: #fff;
-  padding: 15px;
+  padding: 15px 34px;
   position: relative;
 }
 
@@ -238,7 +242,6 @@ h2 {
 
 .left-sidebar_object img {
   display: inline-block;
-  max-width: 100%;
 }
 
 .left-sidebar_object-description {
@@ -251,6 +254,7 @@ h2 {
 
 .content {
   margin-top: 40px;
+  margin-bottom: 76px;
 }
 
 .content .btn {
@@ -258,7 +262,7 @@ h2 {
 }
 
 .directions {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .directions-block-inner {
@@ -346,6 +350,92 @@ h2 {
 .footer-social-links li a:hover {
   background-color: rgba(255, 255, 255, 0.9);
   color: #131313;
+}
+
+.team {
+  text-align: center;
+}
+
+.team h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.team p {
+  margin-bottom: 40px;
+}
+
+.contacts {
+  font-size: 16px;
+}
+
+.contacts-img {
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+.contacts-address {
+  display: block;
+  line-height: 2;
+  text-decoration: none;
+}
+
+.contacts-btn {
+  margin-top: 36px;
+}
+
+.contacts-social-links ul {
+  list-style: none;
+  margin-top: 36px;
+  padding: 0;
+}
+
+.contacts-social-links ul li {
+  display: inline-block;
+}
+
+.contacts-social-links ul li a {
+  display: inline-block;
+  background-color: #009adf;
+  color: #fff;
+  margin-right: 15px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 50%;
+}
+
+.organization-card {
+  background-color: #fff;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  min-height: 22rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.organization-card:hover {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+}
+
+.organization-card a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.organization-card small {
+  display: block;
+  color: rgba(19, 19, 19, 0.5);
+  line-height: 1.5;
+}
+
+.organization-card p {
+  line-height: 22px;
 }
 
 @media (max-width: 991px) {
