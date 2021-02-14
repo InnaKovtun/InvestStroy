@@ -7,6 +7,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="slick/slick-theme.css" rel="stylesheet">
     <link href="slick/slick.css" rel="stylesheet">
+    <link href="css/powerange.min.css" rel="stylesheet" >
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>СтройИнвест - корпоративный сайт</title>
@@ -83,9 +84,85 @@
                     <p>На портрете была изображена дама в меховой шляпе и боа, она сидела очень прямо и протягивала зрителю тяжелую меховую муфту, в которой целиком исчезала ее рука. Затем взгляд Грегора устремился в окно, и пасмурная погода – слышно было, как по жести подоконника стучат капли дождя – привела его и вовсе в грустное настроение.</p>
                     <p>«Хорошо бы еще немного поспать и забыть всю эту чепуху», – подумал он, но это было совершенно неосуществимо, он привык спать на правом боку, а в теперешнем своем состоянии он никак не мог принять этого положения.</p>
                     <p>С какой бы силой ни поворачивался он на правый бок, он неизменно сваливался опять на спину. Закрыв глаза, чтобы не видеть своих барахтающихся ног, он проделал это добрую сотню раз и отказался от этих попыток только тогда, когда почувствовал какую-то неведомую дотоле, тупую и слабую боль в боку. «Ах ты, господи, – подумал он, – какую я выбрал хлопотную профессию!</p>
-                
+                    <ul class="content-links">
+                        <li><a href="#" class="link">Договор займа »</a></li>
+                        <li><a href="#" class="link">Договор погашения »</a></li>
+                        <li><a href="#" class="link">Договор залога »</a></li>
+                        <li><a href="#" class="link">Договор поручительства »</a></li>
+                    </ul>
                 </div>
                 <!-- /.content -->
+                <div class="calc">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="calc-programms">
+                                <div class="calc-radio">
+                                    <input type="radio" data-month="6" data-per="0.2" checked name="programms" id="first">
+                                    <label for="first">
+                                        <span>20% годовых<small>на 6 месяцев</small></span>
+                                    </label>
+                                </div>
+                                <!-- /.calc-radio -->
+                                <div class="calc-radio">
+                                    <input type="radio" data-month="12" data-per="0.24" name="programms" id="second">
+                                    <label for="second">
+                                        <span>24% годовых<small>на 1 год</small></span>
+                                    </label>
+                                </div>
+                                <!-- /.calc-radio -->
+                                <div class="calc-radio">
+                                    <input type="radio" data-month="24" data-per="0.26" name="programms" id="third">
+                                    <label for="third">
+                                        <span>26% годовых<small>на 2 года</small></span>
+                                    </label>
+                                </div>
+                                <!-- /.calc-radio -->
+                                <div class="calc-radio">
+                                    <input type="radio" data-month="36" data-per="0.28" name="programms" id="fours">
+                                    <label for="fours">
+                                        <span>28% годовых<small>на 3 года</small></span>
+                                    </label>
+                                </div>
+                                <!-- /.calc-radio -->
+                                <div class="calc-radio">
+                                    <input type="radio" data-month="48" data-per="0.32" name="programms" id="fifth">
+                                    <label for="fifth">
+                                        <span>32% годовых<small>на 4 года</small></span>
+                                    </label>
+                                    <div class="calc-popular">
+                                        популярная программа
+                                    </div>
+                                </div>
+                                <!-- /.calc-radio -->
+                            </div>
+                            <div class="calc-legal">
+                                <p>*Наша компания является налоговым агентом, удерживает и оплачивает НДФЛ Вся информация, размещенная на сайте, несет исключительно рекламный характер и не является публичной офертой.</p>
+                            </div>
+                        </div>
+                        <!-- /.col-md-6 -->
+                        <div class="col-md-6">
+                            <h4>Укажите сумму инвестиций</h4>
+                            <input type="text" class="calc-range" name="summ">
+                            <div class="calc-summ_invest">
+                                <span class="calc-summ_invest_label">Сумма:</span>
+                                <span class="calc-summ_invest_num"><span>100 000</span> руб.</span>
+                            </div>
+                            <div class="div">
+                                <span class="calc-total">
+                                    <strong><span id="total">110 000</span> руб.</strong><br>
+                                    <small>Сумма через <span id="month">6</span> месяцев</small>
+                                </span>
+                                <span class="calc-monthly">
+                                    <strong><span>32 000</span> руб.</strong><br>
+                                    <small>Ежемесячный доход</small>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- /.col-md-6 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.calc -->
                 <div class="directions">
                     <h2>Направления деятельности</h2>
                     <div class="directions-blocks">
@@ -182,6 +259,7 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="slick/slick.js"></script>
+    <script src="js/powerange.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -3,6 +3,10 @@
   outline: none !important;
 }
 
+button:focus, input:focus, textarea:focus, a:focus {
+  outline: none;
+}
+
 @font-face {
   font-family: 'fontello';
   src: url("../fonts/fontello.eot?25233325");
@@ -98,6 +102,7 @@ img {
   display: inline-block;
   color: #fff;
   border-radius: 5px;
+  border: none;
   text-decoration: none;
   font-size: 14px;
   font-weight: 700;
@@ -438,6 +443,284 @@ img {
   line-height: 22px;
 }
 
+.content-links {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.571;
+  margin-top: 35px;
+  margin-bottom: 70px;
+}
+
+/* Инвестиционные программы */
+/* Оформление калькулятора */
+.calc h4 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.calc-radio {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.calc-radio:last-child {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.calc-legal {
+  font-size: 12px;
+}
+
+.calc-programms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.calc-programms label {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.calc-programms label small {
+  display: block;
+  margin-left: 28px;
+  opacity: 0.5;
+  font-size: 10px;
+}
+
+.calc-programms label:hover {
+  cursor: pointer;
+}
+
+.calc-programms label::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+  background-color: #fff;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.calc input[type="radio"] {
+  display: none;
+}
+
+.calc input[type="radio"]:checked + label::before {
+  background-color: #009adf;
+  border: 6px solid #fff;
+}
+
+.calc-popular {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 16px;
+  height: 25px;
+  color: #fff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #009adf;
+  font-size: 10px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.calc-popular::before {
+  content: '';
+  border: 6px solid transparent;
+  border-right: 6px solid #009adf;
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  margin-top: -6px;
+}
+
+.calc-summ_invest {
+  margin-top: 30px;
+}
+
+.calc-summ_invest_label {
+  margin-right: 15px;
+}
+
+.calc-summ_invest_num {
+  display: inline-block;
+  padding: 10px 48px;
+  background-color: #fff;
+  font-size: 18px;
+}
+
+.calc-total, .calc-monthly {
+  display: inline-block;
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+.calc-total strong, .calc-monthly strong {
+  font-size: 18px;
+  color: #009adf;
+  font-weight: 400;
+}
+
+.calc-total small, .calc-monthly small {
+  font-size: 10px;
+}
+
+.calc-monthly {
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.calc-monthly small {
+  font-size: 10px;
+}
+
+.object-card {
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.object-card_text {
+  padding: 30px;
+}
+
+.object-card_title {
+  display: block;
+  font-size: 16px;
+  color: #009adf;
+  text-decoration: none;
+}
+
+.object-card_price {
+  display: block;
+  font-size: 20px;
+  font-weight: 900;
+  color: #009adf;
+  text-align: center;
+}
+
+.object-card_btn {
+  display: block;
+  text-align: center;
+}
+
+.object-card_more {
+  display: block;
+  color: #131313;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Страница объекта */
+.object-page_gallery {
+  float: right;
+}
+
+/* Всплывающие окна */
+.modal {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  max-width: 370px;
+  margin: 60px auto;
+  text-align: center;
+  padding: 30px 40px;
+  -webkit-box-shadow: 0 12px 24px rgba(0, 0, 1, 0.18);
+          box-shadow: 0 12px 24px rgba(0, 0, 1, 0.18);
+}
+
+.modal-content .close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.5;
+}
+
+.modal-content .close:hover {
+  cursor: pointer;
+}
+
+.modal-content h4 {
+  font-size: 18px;
+  color: #009adf;
+  margin-bottom: 14px;
+  margin-top: 0;
+}
+
+.modal-content p {
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.modal-form {
+  margin-top: 37px;
+}
+
+.modal-form input {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  border: 1px solid rgba(19, 19, 19, 0.5);
+  border-radius: 4px;
+  font-size: 15px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.modal-form_btn {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .calc-total, .calc-monthly {
+    margin-right: 5px;
+  }
+  .calc-summ_invest_num {
+    padding: 15px;
+  }
+}
+
 @media (max-width: 991px) {
   .top-nav_btn {
     display: block;
@@ -461,6 +744,16 @@ img {
   }
   .top-nav_menu li a::after {
     display: none;
+  }
+  .calc-programms label {
+    font-size: 11px;
+  }
+  .calc-programms label::before {
+    width: 8px;
+    height: 8px;
+  }
+  .calc-popular {
+    font-size: 7px;
   }
   .footer {
     padding-right: 20px;
