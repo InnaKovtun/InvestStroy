@@ -20,5 +20,9 @@
 		wp_enqueue_script('slick_script', get_template_directory_uri() . '/assets/slick/slick.js', array('jquery'), null, true);
 		wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), null, true);	
 	}
-	
+
+	add_theme_support( 'custom-logo' );
+	add_theme_support( 'post-thumbnails', array( 'post' ) );          // Только для post
+	add_image_size( 'object-preview', 371);
+
 ?>
